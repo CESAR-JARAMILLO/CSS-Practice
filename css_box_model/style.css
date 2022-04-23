@@ -1,0 +1,17 @@
+* {
+    text-align: center;
+}
+
+.margin_color {
+    background-color: blue;
+    padding: 30px 0;
+}
+
+.box {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px auto;
+  background-color: yellow;
+  color: red;
+}

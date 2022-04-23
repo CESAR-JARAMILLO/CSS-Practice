@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-2.css">
+    <title>Flexbox - Page 2</title>
+</head>
+<body>
+
+    <h1>Flexbox - Page 2</h1>
+
+    <h2>flex-wrap: wrap;</h2>
+    <p>A property of a flex-container</p>
+    <p>Makes it so that another row is created if the flex-items fill the initial row</p>
+    <p>Responsive to multiple screen sizes</p>
+
+    <div class="flex-container">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+        <div class="item">Flex Item 3</div>
+        <div class="item">Flex Item 3</div>
+        <div class="item">Flex Item 3</div>
+        <div class="item">Flex Item 3</div>
+        <div class="item">Flex Item 3</div>
+        <div class="item">Flex Item 3</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <h2>order: (number);</h2>
+
+    <p>can specify the order of flex-items</p>
+
+    <div class="flex-container">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <h2>flex-basis & flex-grow</h2>
+
+    <p>is set on the flex-item</p>
+    <p>flex-basis is the same as and is substituted for width</p>
+    <p>flex-grow grows the flex-item as the screen expands at a rate that is specified</p>
+    <p>will also shrink, but no less than the size specified as the flex-basis</p>
+
+    <div class="flex-container">
+        <div class="item flex-basis">Flex Item 1</div>
+        <div class="item flex-basis">Flex Item 2</div>
+        <div class="item flex-basis">Flex Item 3</div>
+    </div>
+
+    <h2>flex-shrink: </h2>
+    <p>same as flex-grow, but the opposite</p>
+
+    <h2>flex: (grow) (shrink) (basis)</h2>
+    <p>flex property adjust the flex-grow, flex-shrink, and flex-basis attributes</p>
+    <p>basis can be ommited and left as 0, will shrink and grow items evenly</p>
+    <p>flex: 1; is a shorthand to grow and shrink all items evenly</p>
+
+    <div class="flex-container">
+        <div class="item flex">Flex Item 1</div>
+        <div class="item flex">Flex Item 2</div>
+        <div class="item flex">Flex Item 3</div>
+    </div>
+
+    <a href="index.html">home</a>
+    
+</body>
+</html>

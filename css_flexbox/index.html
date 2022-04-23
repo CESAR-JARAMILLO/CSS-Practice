@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS Flexbox</h1>
+
+    <h2>Flex Containers and Flex Items</h2>
+    <p>The <strong>flex container</strong> is the element thae holds <strong>flex items</strong></p>
+    <p>Flex items are direct children of flex containers</p>
+    <p>A container is created with - diplay: flex</p>
+    <p>Setting the display to flex places the items inside of the container in horizontal row</p>
+    <p>The container becomes a flex container and the objects insde the container become flex items</p>
+
+    <h3>display flex</h3>
+
+    <div class="flex-container">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <p>Flex containers and flex items have specific css properties that can be used to do different things</p>
+
+    <h3>flex-direction: column</h3>
+
+    <p>Can change from row to column using the flex-direction property set to column</p>
+
+    <div class="flex-container-column">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <h3>The Axes</h3>
+
+    <p>The main axis is the horizontal axis when in  flex-direction row</p>
+    <p>And the cross axis is going vertical when in flex direction row</p>
+
+    <p>The main axis is going vertical when in flex-direction is set to column</p>
+    <p>The cross axis is going horizontal when the flex-direction is set to column</p>
+
+    <h2>Alignment Properties</h2>
+
+    <h3>justify-content: end</h3>
+
+    <p>justify-content pertains to the main axis</p>
+
+    <div class="flex-container-jutify-content-end">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: center</h3>
+
+    <div class="flex-container-jutify-content-center">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-around</h3>
+
+    <div class="flex-container-jutify-content-space-around">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <h3>justify-content: space-between</h3>
+
+    <div class="flex-container-jutify-content-space-between">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <h3>align-items: end</h3>
+
+    <p>align items pertains to the cross axis</p>
+    <p>The flex containers height will need to be specified when flex direction is set to row to allign items</p>
+
+    <div class="flex-container-align-items-end">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+    
+    <h3>align-items: center</h3>
+
+    <div class="flex-container-align-items-center">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <h3>align-self: center</h3>
+    <p>A flex item property</p>
+    <p>Targets a specific flex item</p>
+
+    <div class="flex-container-align-items-center">
+        <div class="item item-self-align">Flex Item 1</div>
+        <div class="item item-self-align">Flex Item 2</div>
+        <div class="item item-self-align">Flex Item 3</div>
+    </div>
+
+    <h3>align-items: start; flex-direction: column;</h3>
+    <p>When the flex direction is set to column the main axis is the vertical-axis or y-axis</p>
+    <p>And the cross-axis is the horizontal-axis or x-axis</p>
+    <p>Since align-items pertains to the cross axis, thats why the flex items move from left to right (horizontal-axis/x-axis) when flex-direction is column.</p>
+
+    <div class="flex-container-align-items-column">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+    </div>
+
+    <h2>Centering items</h2>
+
+    <p>Flex items content can be adjusted by adding display: flex;</p>
+    <p>The flex items content gets automatically set to flex-direction: row;</p>
+    <p>By using justify-content: center; on the flex item, its content gets centered on the main-axis which in this case is the horizontal-axis/x-axis</p>
+    <p>And by using align-items: center; on the flex-item its content is centerd on the cross-axis which in this case is the vertical-axis/y-axis</p>
+
+    <div class="flex-container-align-items-center">
+        <div class="item item-center">Flex Item 1</div>
+        <div class="item item-center">Flex Item 2</div>
+        <div class="item item-center">Flex Item 3</div>
+    </div>
+
+    <a href="index-2.html">Page 2</a>
+
+</body>
+</html>
